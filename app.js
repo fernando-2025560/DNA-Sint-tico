@@ -942,6 +942,16 @@ window.addEventListener("resize", ajustarLayout);
 
 
 
+// Gera variáveis CSS --px-1-vw ... --px-1024-vw e --px-1-vh ... --px-1024-vh
+// baseWidth e baseHeight são o "design reference" (ajuste se quiser outro valor)
+(function(baseWidth = 1440, baseHeight = 900) {
+  const r = document.documentElement;
+  for (let i = 1;  i <= 1024; i++) {
+    r.style.setProperty(`--px-${i}-vw`, `calc(${i} / ${baseWidth} * 100vw)`);
+    r.style.setProperty(`--px-${i}-vh`, `calc(${i} / ${baseHeight} *100vh)`);
+  }
+})();
+
 
 
 
