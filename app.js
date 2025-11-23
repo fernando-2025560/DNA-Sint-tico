@@ -871,7 +871,7 @@ function ajustarLayout() {
       img.style.maxWidth = "16.666667vw";
       img.style.borderRadius = "0.625000vw";
       img.style.display = "block";
-      img.style.margin = "10px auto";
+      img.style.margin = "0.78125vw auto";
     });
 
     // 🔹 Ajuste do menu para mobile
@@ -986,6 +986,7 @@ document.addEventListener("visibilitychange", () => {
 
 /* Quando o dispositivo altera DPI / Zoom */
 window.matchMedia("(resolution)").addEventListener("change", ajustarEscala);
+
 
 
 
