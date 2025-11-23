@@ -1918,3 +1918,5 @@ p {
     --base-size: 1vw;
   }
 }
+
+* { box-sizing: border-box; }
