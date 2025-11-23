@@ -298,21 +298,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
 document.addEventListener("DOMContentLoaded", function () {
     const url = "https://www.genome.gov/human-genome-project";
   
     new QRCode(document.getElementById("qrcode"), {
       text: url,
-      width: 7.0625vw;   // 3cm ≈ 113px
-      height: 7.0625vw;
+      width: 4.322917vw,   // 3cm ≈ 113px
+      height: 7.685185vh,
       colorDark: "#000000",
       colorLight: "#ffffff",
       correctLevel: QRCode.CorrectLevel.H
     });
   });
   
-
-
  
   
 
@@ -974,6 +973,7 @@ window.addEventListener("orientationchange", ajustarEscala);
 
 /* Roda ao redimensionar */
 window.addEventListener("resize", ajustarEscala);
+
 
 
 
