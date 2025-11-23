@@ -956,3 +956,24 @@ window.addEventListener("resize", ajustarLayout);
 
 
 
+
+function ajustarEscala() {
+  if (window.matchMedia("(orientation: portrait)").matches) {
+    document.documentElement.style.setProperty("--base-size",
+window.innerHeight * 0.01 + "px");
+  } else {
+    document.documentElement.style.setProperty("--basse-size", window.innerWidth * 0.01 + "px");
+  }
+}
+
+/* Roda ao abrir a tela */
+ajustarEscala();
+
+/* Roda ao girar dispositivo */
+window.addEventListener("orientationchange", ajustarEscala);
+
+/* Roda ao redimensionar */
+window.addEventListener("resize", ajustarEscala);
+
+
+
