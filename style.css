@@ -49,10 +49,10 @@ header {
 /* Logo */
 .logo {
     position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 3px !important;
-    height: 56.7px !important;
+    top: 0 !important;               /* já é responsivo */
+    left: 0 !important;              /* já é responsivo */
+    width: 0.278vw !important;       /* antes: 3px */
+    height: 5.25vw !important;       /* antes: 56.7px */
     object-fit: cover !important;
     z-index: 999999999999 !important;
 }
@@ -1928,6 +1928,7 @@ p {
 }
 
 * { box-sizing: border-box; }
+
 
 
 
