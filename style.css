@@ -2,7 +2,7 @@
 html, body {
   margin: 0 !important;
   padding: 0 !important;
-  width: 1350px !important;
+  width: 100% !important;
   min-width: 1350px !important;
   height: 1460px !important;
   min-height: 1460px !important;
@@ -1598,4 +1598,5 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+
 
