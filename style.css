@@ -1410,7 +1410,7 @@ h2 {
   left: 718.1102362204724px;                    /* mesma distância lateral do vídeo */
   width: 320px;                  /* igual à largura do vídeo */
   text-align: absolute;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family:  Arial, sans-serif;
   font-size: 13px;
   line-height: 1.1;
   color: #ffffff;
@@ -1437,7 +1437,7 @@ h2 {
   left: 718.1102362204724px;                    /* mesma distância lateral do vídeo */
   width: 320px;                  /* igual à largura do vídeo */
   text-align: absolute;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family:  Arial, sans-serif;
   font-size: 13px;
   line-height: 1.1;
   color: #ffffff;
@@ -1462,7 +1462,7 @@ h2 {
   left: 377.95px;                    /* mesma distância lateral do vídeo */
   width: 320px;                  /* igual à largura do vídeo */
   text-align: absolute;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family:  Arial, sans-serif;
   font-size: 13px;
   line-height: 1.1;
   color: #ffffff;
@@ -1488,7 +1488,7 @@ h2 {
   left: 37.8px;                    /* mesma distância lateral do vídeo */
   width: 320px;                  /* igual à largura do vídeo */
   text-align: absolute;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family:  Arial, sans-serif;
   font-size: 13px;
   line-height: 1.1;
   color: #ffffff;
@@ -1514,7 +1514,7 @@ h2 {
   left: 37.8px;                    /* mesma distância lateral do vídeo */
   width: 320px;                  /* igual à largura do vídeo */
   text-align: absolute;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family:  Arial, sans-serif;
   font-size: 13px;
   line-height: 1.1;
   color: #000;
@@ -1540,7 +1540,7 @@ h2 {
   left: 377.953px;                    /* mesma distância lateral do vídeo */
   width: 320px;                  /* igual à largura do vídeo */
   text-align: absolute;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 13px;
   line-height: 1.1;
   color: #000;
@@ -1565,7 +1565,7 @@ h2 {
   left: 718.11px;                    /* mesma distância lateral do vídeo */
   width: 320px;                  /* igual à largura do vídeo */
   text-align: absolute;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 13px;
   line-height: 1.1;
   color: #000;
@@ -1828,3 +1828,19 @@ main {
 
 
 
+:root {
+  /* Escala automática universal */
+  --auto: clamp(0.5rem, 2vw + 1vh, 4rem);
+
+  /* Para elementos grandes, como caixas */
+  --auto-large: clamp(10vh, 8vw + 6vh, 60vh);
+
+  /* Para tamenhos que antes eram 600px */
+  -- auto-600: clamp(20vh, 40vw, 75vh);
+
+/* Texto totalmente responsivo */
+--text: clamp(0.8rem, 1.2vw + 0.7vh, 2rem);
+
+/* Bordas, margens, paddings */
+--space: clamp(0.4rem, 1vw + 0.3vh, 1.5rem);
+}
