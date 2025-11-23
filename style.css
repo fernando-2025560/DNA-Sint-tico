@@ -282,8 +282,8 @@ body {
 }
 
 #qrcode {
-  width: 4.322917vw !important;
-  height: 7.685185vh !important;
+  width: 113px !important;
+  height: 113px !important;
   position: fixed;
   bottom: 40.866vh;
 }
@@ -1937,6 +1937,7 @@ p {
 }
 
 * { box-sizing: border-box; }
+
 
 
 
