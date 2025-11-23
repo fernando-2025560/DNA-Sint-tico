@@ -272,9 +272,9 @@ body {
 #qrcode-container {
   position: fixed !important;
   left: 92.5% !important;
-  bottom: 37.79527559px !important;
-  width: 37.79527559px !important;
-  height: 96.77px !important;
+  bottom: 3.425926vh !important;
+  width: 1.927083vw !important;
+  height: 8.888889vh !important;
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
@@ -282,10 +282,10 @@ body {
 }
 
 #qrcode {
-  width: 7.0625vw;   
- height: 7.0625vw;
+  width: 4.322917vw !important;
+  height: 7.685185vh !important;
   position: fixed;
-  bottom: 367.795px;
+  bottom: 40.866vh;
 }
 
 
@@ -1920,6 +1920,7 @@ p {
 }
 
 * { box-sizing: border-box; }
+
 
 
 
