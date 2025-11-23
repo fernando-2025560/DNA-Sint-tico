@@ -1517,21 +1517,21 @@ h2 {
 /* Caixa do vídeo */
 #customVideoBox12 {
   position: absolute;
-  top: 1209px;         /* ajuste conforme a posição do seu vídeo */
-  left: 377.953px;        /* distância da lateral esquerda */
-  width: 320px;      /* largura padrão do vídeo */
-  height: 180px;     /* altura padrão do vídeo */
+  top: 111.00vw;        /* antes: 1209px */
+  left: 34.99vw;        /* antes: 377.953px */
+  width: 29.63vw;       /* antes: 320px */
+  height: 16.66vw;      /* antes: 180px */
 }
 
 /* Legenda-link abaixo do vídeo */
 #videoCaption12 {
   position: absolute;
-  top: calc(1209px + 180px); /* 32cm (posição do topo do vídeo) + altura do vídeo + 1mm */
-  left: 377.953px;                    /* mesma distância lateral do vídeo */
-  width: 320px;                  /* igual à largura do vídeo */
-  text-align: absolute;
+  top: calc(111.00vw + 16.66vw); /* antes: calc(1209px + 180px) */
+  left: 34.99vw;                 /* antes: 377.953px */
+  width: 29.63vw;                /* antes: 320px */
+  text-align: left;
   font-family: Arial, sans-serif;
-  font-size: 13px;
+  font-size: 1.203vw;            /* antes: 13px */
   line-height: 1.1;
   color: #000;
   margin: 0;
@@ -1928,6 +1928,7 @@ p {
 }
 
 * { box-sizing: border-box; }
+
 
 
 
