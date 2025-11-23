@@ -4,8 +4,8 @@ html, body {
   padding: 0 !important;
   width: 100% !important;
   min-width: 100% !important;
-  height: 170% !important;
-  min-height: 170% !important;
+  height: 160% !important;
+  min-height: 160% !important;
   background-image: url(1.jpg) !important;
   background-size: cover !important;
   background-position: center center !important;
@@ -1598,6 +1598,7 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
