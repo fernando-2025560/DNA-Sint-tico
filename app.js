@@ -957,23 +957,35 @@ window.addEventListener("resize", ajustarLayout);
 
 
 function ajustarEscala() {
-  if (window.matchMedia("(orientation: portrait)").matches) {
-    document.documentElement.style.setProperty("--base-size",
-window.innerHeight * 0.01 + "px");
-  } else {
-    document.documentElement.style.setProperty("--basse-size", window.innerWidth * 0.01 + "px");
-  }
+  const portrait = window.matchMedia("(orientation: portrait)").matches;
+
+  // Captura medidas reais do viewport
+  const largura = window.innerWidth;
+  const altura = window.innerHeight;
+
+  // Regra responsiva absoluta
+  const base = portrait ? altura * 0.01 : largura * 0.01;
+
+  // Aplica ao CSS
+  document.documentElement.style.setProperty("--base-size", base + "px");
 }
 
-/* Roda ao abrir a tela */
+/* Executa ao carregar */
 ajustarEscala();
 
-/* Roda ao girar dispositivo */
-window.addEventListener("orientationchange", ajustarEscala);
+/* Ao mudar orientação em tempo real */
+window.matchMedia("(orientation: portrait)").addEventListener("change", ajustarEscala);
 
-/* Roda ao redimensionar */
+/* Ao redimensionar a janela */
 window.addEventListener("resize", ajustarEscala);
 
+/* Quando voltar para a aba */
+document.addEventListener("visibilitychange", () => {
+  if (!document.hidden) ajustarEscala();
+});
+
+/* Quando o dispositivo altera DPI / Zoom */
+window.matchMedia("(resolution)").addEventListener("change", ajustarEscala);
 
 
 
