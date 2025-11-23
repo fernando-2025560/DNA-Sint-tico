@@ -26,35 +26,25 @@ html, body {
 }
 
 .content {
-    padding: 19046px !important;
+    padding: 991.4vw !important; /* 19046px */
 }
-
 
 .media {
     display: flex !important;
     justify-content: space-around !important;
-    margin-bottom: 19046px !important;
+    margin-bottom: 991.4vw !important; /* 19046px */
 }
-
-
-
-
 
 /* Estilos Gerais */
 body {
-    
-    overflow: hidden !important; /* Evita Rolagem */
+    overflow: hidden !important;
 }
 
-
-
-
-header{
+header {
     background-color: transparent !important;
-    height: 70px !important;
-    width: 1080px !important;
+    height: 3.645vw !important; /* 70px */
+    width: 56.25vw !important;  /* 1080px */
 }
-
 
 /* Logo */
 .logo {
@@ -1937,6 +1927,7 @@ p {
 }
 
 * { box-sizing: border-box; }
+
 
 
 
