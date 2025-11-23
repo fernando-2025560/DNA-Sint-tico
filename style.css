@@ -1844,3 +1844,77 @@ main {
 /* Bordas, margens, paddings */
 --space: clamp(0.4rem, 1vw + 0.3vh, 1.5rem);
 }
+
+
+
+/* Ajuste total da tela em qualquer dispositivo e orientação */
+html, body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/*  Ajuste de escala para qualquer medição */
+:root  {
+  --base-size: 1vw;  /* Será atualizado automaticamente */
+}
+
+/* Responsividade global  */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Layout */
+body  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Estilos */
+header  {
+  text-align: center;
+  padding: calc(var(--base-size) * 3);
+}
+
+h1 {
+  font-size: calc(var(--base-size) * 6);
+}
+
+p {
+  font-size: calc(var(--base-size) * 3);
+}
+
+/* Elemento responsivo */
+.box {
+  background: #e3e3e3;
+  border-radius: calc(var(--base-size) * 2);
+  padding: calc(var(var(--base-size) * 4);
+  margin-top: calc(var(--base-size) * 5);
+  width: 80%;
+}
+
+.box h2 {
+  font-size: calc(var(--base-size) * 4);
+}
+
+/* Responsividade POR ORIENTAÇÃO */
+
+/* Vertical */
+@media (orientation: portrait) {
+  :root  {
+    --base-size: 1vh;
+  }
+}
+
+/* Horizontal */
+@media (orientation: landscape) {
+  :root {
+    --base-size: 1vw;
+  }
+}
