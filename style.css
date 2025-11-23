@@ -1526,12 +1526,12 @@ h2 {
 /* Legenda-link abaixo do vídeo */
 #videoCaption12 {
   position: absolute;
-  top: calc(111.00vw + 16.66vw); /* antes: calc(1209px + 180px) */
-  left: 34.99vw;                 /* antes: 377.953px */
-  width: 29.63vw;                /* antes: 320px */
+  top: calc(1209px + 180px); /* antes: calc(1209px + 180px) */
+  left: 377.953px;                 /* antes: 377.953px */
+  width: 320px;                /* antes: 320px */
   text-align: left;
   font-family: Arial, sans-serif;
-  font-size: 1.203vw;            /* antes: 13px */
+  font-size: 13px;            /* antes: 13px */
   line-height: 1.1;
   color: #000;
   margin: 0;
@@ -1928,6 +1928,7 @@ p {
 }
 
 * { box-sizing: border-box; }
+
 
 
 
