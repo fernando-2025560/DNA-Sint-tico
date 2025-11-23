@@ -235,12 +235,12 @@ body {
 
 
 .glass-icon:hover {
-  transform: scale(1.4) translateX(-3.7px) !important;
+  transform: scale(1.4) translateX(-0.192vw) !important; /* -3.7px → vw */
   box-shadow:
-      0 3px 8px rgba(0,0,0,0.4),
-      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-      inset 3px 3px 3px rgba(0,0,0,0.2) !important;
-      top: 611.5px !important;
+      0 0.156vw 0.416vw rgba(0,0,0,0.4), /* 3px, 8px */
+      inset 0.104vw 0.104vw 0.156vw rgba(255, 255, 255, 0.6), /* 2px,2px,3px */
+      inset 0.156vw 0.156vw 0.156vw rgba(0,0,0,0.2) !important; /* 3px,3px,3px */
+  top: 31.82vw !important; /* 611.5px → vw */
 }
 
 .glass-svg {
@@ -1937,6 +1937,7 @@ p {
 }
 
 * { box-sizing: border-box; }
+
 
 
 
