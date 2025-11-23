@@ -88,7 +88,7 @@ header {
 
   
   h1 {
-    left: 5.885417vw !important;
+    left: 5.25417vw !important;
     z-index: 9999999999999 !important;
     color: #000 !important;
   }
@@ -1937,6 +1937,7 @@ p {
 }
 
 * { box-sizing: border-box; }
+
 
 
 
