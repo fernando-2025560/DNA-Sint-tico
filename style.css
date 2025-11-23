@@ -1601,5 +1601,230 @@ h2 {
 
 
 
+display: flex;
+  flex-direction: column;
+
+/* Responsivo (opcional) */
+@media (max-width: 31.250000vw) {
+  #customYT,
+  #videoCaption {
+    width: 100%;
+  }
+}
+
+
+
+
+/* Responsividade */
+@media (max-width: 53.333333vw) {
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 31.250000vw) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas menores que 768px (como tablets e smartphones) */
+@media (max-width: 40.000000vw) {
+  .content {
+      flex-direction: column;
+  }
+  .box {
+      width: 100%;
+  }
+}
+
+/* Para telas menores que 480px (como smartphones) */
+@media (max-width: 25.000000vw) {
+  header, {
+      font-size: 1.296296vh;
+  }
+  .box {
+      font-size: 1.296296vh;
+      padding: 0.781250vw;
+  }
+}
+
+
+/* Para telas menores que 768px */
+@media (max-width: 40.000000vw) {
+  .search-container {
+      flex-direction: column; /* Coloca a barra e o botão em coluna */
+      align-items: center; /* Centraliza os itens */
+  }
+
+  .search-input, .search-button {
+      width: 100%; /* Faz a barra de pesquisa e o botão ocuparem a largura inteira */
+      margin-bottom: 0.520833vw; /* Dá um espaçamento entre os elementos */
+  }
+}
+
+/* Para telas menores que 480px (como smartphones) */
+@media (max-width: 25.000000vw) {
+  .search-input, .search-button {
+      font-size: 1.296296vh; /* Ajusta o tamanho da fonte para telas pequenas */
+      padding: 0.416667vw; /* Reduz o padding para economizar espaço */
+  }
+}
+
+/* Para telas até 320px (smartphones muito pequenos, ex: iPhone SE) */
+@media (max-width: 16.666667vw) {
+  .search-input, .search-button {
+      width: 100%; /* Barra de pesquisa e botão ocupam 100% da largura */
+      font-size: 1.111111vh; /* Tamanho de fonte menor */
+      padding: 0.312500vw; /* Reduz o padding */
+      margin-bottom: 0.416667vw; /* Espaço entre os elementos */
+  }
+}
+
+/* Para telas até 375px (iPhone X, iPhone 11, etc.) */
+@media (max-width: 19.531250vw) {
+  .search-input, .search-button {
+      width: 100%; /* Barra de pesquisa e botão ocupam 100% da largura */
+      font-size: 1.296296vh; /* Tamanho de fonte ajustado */
+      padding: 0.416667vw; /* Ajusta o padding */
+      margin-bottom: 0.520833vw; /* Espaçamento entre os elementos */
+  }
+}
+
+/* Para telas até 414px (ex: Samsung Galaxy S9+) */
+@media (max-width: 21.562500vw) {
+  .search-input, .search-button {
+      width: 100%; /* Barra de pesquisa e botão ocupam 100% da largura */
+      font-size: 1.388889vh; /* Ajuste do tamanho de fonte */
+      padding: 0.520833vw; /* Aumenta o padding para melhor visibilidade */
+      margin-bottom: 0.625000vw; /* Aumenta o espaçamento */
+  }
+}
+
+/* Para telas até 480px (como smartphones grandes e tablets pequenos em modo retrato) */
+@media (max-width: 25.000000vw) {
+  .search-input, .search-button {
+      width: 100%; /* Barra de pesquisa e botão ocupam 100% da largura */
+      font-size: 1.481481vh; /* Tamanho de fonte mais legível */
+      padding: 0.625000vw; /* Espaço maior para facilitar a interação */
+      margin-bottom: 0.781250vw; /* Espaço maior entre os elementos */
+  }
+}
+
+/* Para telas entre 481px e 600px (smartphones mais largos, tablets pequenos) */
+@media (min-width: 25.052083vw) and (max-width: 31.250000vw) {
+  .search-input, .search-button {
+      width: 100%; /* Barra de pesquisa e botão ocupam 100% da largura */
+      font-size: 1.481481vh; /* Tamanho de fonte ainda legível */
+      padding: 0.625000vw; /* Ajuste de padding */
+      margin-bottom: 0.781250vw; /* Espaçamento */
+  }
+}
+
+/* Para telas entre 601px e 768px (tablets em modo retrato) */
+@media (min-width: 31.302083vw) and (max-width: 40.000000vw) {
+  .search-input, .search-button {
+      width: 100%; /* Barra de pesquisa e botão ocupam 100% da largura */
+      font-size: 1.666667vh; /* Tamanho de fonte maior */
+      padding: 0.729167vw; /* Maior espaçamento */
+      margin-bottom: 1.041667vw; /* Mais espaçamento entre os elementos */
+  }
+}
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  
+}
+
+/* Para garantir que o layout ocupe toda a altura da tela e que o conteúdo não saia da tela */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Definindo o layout do conteúdo principal */
+main {
+  flex-grow: 1; /* Garante que o conteúdo ocupe toda a área disponível */
+  padding: 1.041667vw;
+}
+
+
+/* Media Queries para Responsividade */
+
+/* Para telas até 768px (tablets e smartphones em modo retrato) */
+@media (max-width: 40.000000vw) {
+  body {
+      flex-direction: column; /* Organiza os itens em uma coluna */
+  }
+
+  main {
+      padding: 0.520833vw;
+  }
+
+  
+}
+
+/* Para telas até 480px (smartphones em modo retrato) */
+@media (max-width: 25.000000vw) {
+  main {
+      padding: 0.260417vw; /* Reduz o padding em telas muito pequenas */
+  }
+
+  
+  /* Ajusta os elementos de conteúdo para ocupar a largura completa */
+  .content, .sidebar {
+      width: 100%; /* Barra lateral e conteúdo ocupam toda a largura */
+      margin-bottom: 0.520833vw; /* Adiciona espaçamento entre os elementos */
+  }
+}
+
+/* Para telas grandes acima de 1024px (monitores e desktops) */
+@media (min-width: 53.333%) {
+  .content {
+      display: flex;
+      justify-content: space-between;
+      gap: 1.041667vw;
+  }
+
+  .sidebar {
+      width: 15.625000vw; /* Sidebar com largura fixa */
+  }
+
+  .box {
+      flex: 1 1 10.416667vw; /* Ajusta as caixas para ocupar o espaço */
+  }
+}
+
+/* ======================== RESPONSIVIDADE ========================= */
+
+/* Tablets (até 1024px) */
+@media (max-width: 53.333333vw) {
+  .search-bar { width: 50vw; }
+  .vid-box p { font-size: 0.85rem; }
+}
+
+/* Smartphones (até 768px) */
+@media (max-width: 40.000000vw) {
+  header { height: 8vh; }
+  .search-container { flex-direction: column; }
+  .search-bar, .search-button { width: 80%; margin-bottom: 0.925926vh; }
+  .video-gallery { grid-template-columns: 1fr; }
+  .chart-wrap, #qrcode-container { display: none; } /* oculta extras em telas pequenas */
+}
+
+/* Smartphones muito pequenos (até 480px) */
+@media (max-width: 25.000000vw) {
+  .search-bar { font-size: 0.9rem; }
+  .search-button { font-size: 0.9rem; }
+  .vid-box iframe { width: 100%; }
+  .vid-box p { font-size: 0.8rem; }
+}
+
+
 
 
