@@ -18,9 +18,9 @@ html, body {
 
 .search-container {
     position: absolute !important;
-    top: 1px !important;  /* Distância do topo */
-    left: 600px !important;
-    transform: translateX(-685px) !important;
+    top: 0.078vh !important;   /* 1px convertido → responsivo */
+    left: 41.66vw !important;  /* 600px convertido → responsivo */
+    transform: translateX(-47.56vw) !important; /* -685px convertido → responsivo */
     display: flex !important;
     align-items: center !important;
 }
@@ -1937,6 +1937,7 @@ p {
 }
 
 * { box-sizing: border-box; }
+
 
 
 
