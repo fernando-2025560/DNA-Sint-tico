@@ -1574,9 +1574,15 @@ h2 {
   text-decoration: underline;
 }
 
+font-size: calc(var(--base-size) * 2);
+margin: calc(var(--base-size) * 4);
+border-radius: calc(var(--base-size) * 1.2);
+width: calc(var(--base-size) * 20);
+height: calc(var(--base-size) * 5);
+
 
 /* Responsivo (opcional) */
-@media (max-width: 600px) {
+@media (max-width: 76.92vw) {
   #customYT,
   #videoCaption {
     width: 100%;
@@ -1586,21 +1592,32 @@ h2 {
 
 
 
-/* Responsividade */
-@media (max-width: 1024px) {
+/* Responsividade inteligente */
+.video-grid {
+  display: grid;
+  gap: calc(var(--base-size) * 2);
+}
+
+/* Telas grandes – 3 ou mais colunas automáticas */
+@media (min-width: 1025px) {
   .video-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   }
 }
 
+/* Tablets */
+@media (max-width: 1024px) {
+  .video-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+}
+
+/* Celulares */
 @media (max-width: 600px) {
   .video-grid {
     grid-template-columns: 1fr;
   }
 }
-
-
-
 display: flex;
   flex-direction: column;
 
@@ -1920,6 +1937,7 @@ p {
 }
 
 * { box-sizing: border-box; }
+
 
 
 
