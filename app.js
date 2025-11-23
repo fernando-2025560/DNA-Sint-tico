@@ -304,8 +304,8 @@ document.addEventListener("DOMContentLoaded", function () {
   
     new QRCode(document.getElementById("qrcode"), {
       text: url,
-      width: 4.322917vw,   // 3cm ≈ 113px
-      height: 7.685185vh,
+      width: 113px,   // 3cm ≈ 113px
+      height: 113px,
       colorDark: "#000000",
       colorLight: "#ffffff",
       correctLevel: QRCode.CorrectLevel.H
@@ -986,6 +986,7 @@ document.addEventListener("visibilitychange", () => {
 
 /* Quando o dispositivo altera DPI / Zoom */
 window.matchMedia("(resolution)").addEventListener("change", ajustarEscala);
+
 
 
 
