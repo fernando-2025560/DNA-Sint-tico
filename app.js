@@ -303,8 +303,8 @@ document.addEventListener("DOMContentLoaded", function () {
   
     new QRCode(document.getElementById("qrcode"), {
       text: url,
-      width: 113,   // 3cm ≈ 113px
-      height: 113,
+      width: 5.885417vw,   // 3cm ≈ 113px
+      height: 10.462963vh,
       colorDark: "#000000",
       colorLight: "#ffffff",
       correctLevel: QRCode.CorrectLevel.H
@@ -372,7 +372,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const css = `
     /* Estilos conforme especificado acima */
-    #custom-overlay-container { position: absolute; top: 113px; left: 566.9291338582676px; pointer-events: none; }
+    #custom-overlay-container { position: absolute; top: 10.462963vh; left: 566.9291338582676px; pointer-events: none; }
     #custom-overlay-container > * { pointer-events: auto; }
     #custom-video { position: relative; z-index: 2; display: block; }
     #custom-image { position: relative; z-index: 1; display: block; }
@@ -823,9 +823,9 @@ document.head.appendChild(customTag);
 function ajustarColunas() {
   const gallery = document.querySelector('.video-gallery');
   if(window.innerWidth < 1050) {
-    gallery.style.gridTemplateColumns = 'repeat(2, 320px)';   // 2 colunas em telas menores
+    gallery.style.gridTemplateColumns = 'repeat(2, 29.629630vh)';   // 2 colunas em telas menores
   } else {
-    gallery.style.gridTemplateColumns = 'repeat(3, 320px)';
+    gallery.style.gridTemplateColumns = 'repeat(3, 29.629630vh)';
   }
 }
 
@@ -838,7 +838,7 @@ window.addEventListener('load', ajustarColunas);
 
 
 function ajustarLayout() {
-  if (window.innerWidth <= 768) {
+  if (window.innerWidth <= 40.000000vw) {
     // Código para telas pequenas
   } else {
     // Código para telas grandes
@@ -860,7 +860,7 @@ function ajustarLayout() {
     videos.forEach(video => {
       video.style.width = "100%";
       video.style.height = "auto";
-      video.style.maxWidth = "320px";
+      video.style.maxWidth = "16.666667vw";
       video.style.display = "block";
       video.style.margin = "0 auto";
     });
@@ -869,8 +869,8 @@ function ajustarLayout() {
     imagens.forEach(img => {
       img.style.width = "100%";
       img.style.height = "auto";
-      img.style.maxWidth = "320px";
-      img.style.borderRadius = "12px";
+      img.style.maxWidth = "16.666667vw";
+      img.style.borderRadius = "0.625000vw";
       img.style.display = "block";
       img.style.margin = "10px auto";
     });
@@ -882,23 +882,23 @@ function ajustarLayout() {
       menu.style.width = "100%";
       menu.style.height = "auto";
       menu.style.backgroundColor = "rgba(0, 0, 0, 0.85)";
-      menu.style.backdropFilter = "blur(5px)";
+      menu.style.backdropFilter = "blur(0.260417vw)";
       menu.style.flexDirection = "column";
       menu.style.textAlign = "center";
-      menu.style.padding = "10px 0";
+      menu.style.padding = "0.520833vw 0";
     }
 
     // 🔹 Ajuste geral do corpo da página
-    body.style.paddingTop = "70px";
+    body.style.paddingTop = "3.645833vw";
 
   } else {
     console.log("Modo desktop ativado");
 
     // 🔹 Ajuste de vídeos para telas grandes
     videos.forEach(video => {
-      video.style.width = "640px";
-      video.style.height = "360px";
-      video.style.margin = "20px auto";
+      video.style.width = "33.333333vw";
+      video.style.height = "33.333333vh";
+      video.style.margin = "1.041667vw auto";
       video.style.display = "block";
     });
 
@@ -906,10 +906,10 @@ function ajustarLayout() {
     imagens.forEach(img => {
       img.style.width = "auto";
       img.style.height = "auto";
-      img.style.maxWidth = "600px";
-      img.style.borderRadius = "8px";
+      img.style.maxWidth = "31.250000vw";
+      img.style.borderRadius = "0.416667vw";
       img.style.display = "block";
-      img.style.margin = "20px auto";
+      img.style.margin = "1.041667vw auto";
     });
 
     // 🔹 Ajuste do menu para desktop
@@ -917,17 +917,17 @@ function ajustarLayout() {
       menu.style.position = "fixed";
       menu.style.top = "0";
       menu.style.width = "100%";
-      menu.style.height = "60px";
+      menu.style.height = "5.555556vh";
       menu.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
       menu.style.display = "flex";
       menu.style.justifyContent = "center";
       menu.style.alignItems = "center";
       menu.style.flexDirection = "row";
-      menu.style.backdropFilter = "blur(3px)";
+      menu.style.backdropFilter = "blur(0.156250vw)";
     }
 
     // 🔹 Ajuste geral do corpo da página
-    body.style.paddingTop = "80px";
+    body.style.paddingTop = "4.166667vw";
   }
 }
 
@@ -974,6 +974,7 @@ window.addEventListener("orientationchange", ajustarEscala);
 
 /* Roda ao redimensionar */
 window.addEventListener("resize", ajustarEscala);
+
 
 
 
