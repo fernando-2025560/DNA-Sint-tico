@@ -303,8 +303,8 @@ document.addEventListener("DOMContentLoaded", function () {
   
     new QRCode(document.getElementById("qrcode"), {
       text: url,
-      width: 113px,   // 3cm ≈ 113px
-      height: 113px,
+      width: 7.0625vw;   // 3cm ≈ 113px
+      height: 7.0625vw;
       colorDark: "#000000",
       colorLight: "#ffffff",
       correctLevel: QRCode.CorrectLevel.H
@@ -974,6 +974,7 @@ window.addEventListener("orientationchange", ajustarEscala);
 
 /* Roda ao redimensionar */
 window.addEventListener("resize", ajustarEscala);
+
 
 
 
