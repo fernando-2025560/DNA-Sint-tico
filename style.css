@@ -1572,6 +1572,36 @@ width: calc(var(--base-size) * 20);
 height: calc(var(--base-size) * 5);
 
 
+
+
+
+
+
+iframe {
+  width: 26.9999999997vw !important;
+}
+
+
+iframe {
+  height: 15vw !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsivo (opcional) */
 @media (max-width: 76.92vw) {
   #customYT,
@@ -1928,6 +1958,7 @@ p {
 }
 
 * { box-sizing: border-box; }
+
 
 
 
